@@ -1,18 +1,23 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  el-main
+    el-row
+      el-col(:span="12")
+        Pomodoro
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Pomodoro from '@/components/Pomodoro.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Pomodoro
   }
 }
 </script>
+
+<style lang="scss" scoped>
+ .el-main {
+   padding-top: 0px;
+ }
+</style>
